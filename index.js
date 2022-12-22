@@ -7,44 +7,62 @@ function addIncome() {
   // Get Value Of Input Fields
   let incomeId = document.getElementById("insource").value;
   let incomeAmount = document.getElementById("inamount").value;
-  // Make Object and Push into income array
-  obj = {
-    id: Math.floor(Math.random() * 10000),
-    incomeId: incomeId,
-    incomeAmount: incomeAmount,
-  };
-  incomeArr.push(obj);
-  //   Call Display Income Table Function
-  displayIncome(incomeArr);
-  //   Make Input Value Blanks After add into table
-  document.getElementById("insource").value = "";
-  document.getElementById("inamount").value = "";
-  //   Call Total Income Function
-  totalIncome(incomeArr);
-  //   Call Total Balance Function
-  totalBalace(incomeArr, expenseArr);
+
+  if (incomeId === "") {
+    alert("Please Fill Income Source Field !!");
+    document.getElementById("insource").focus();
+  } else if (incomeAmount === "") {
+    alert("Please Fill Income Amount Field !!");
+    document.getElementById("inamount").focus();
+  } else {
+    // Make Object and Push into income array
+    obj = {
+      id: Math.floor(Math.random() * 10000),
+      incomeId: incomeId,
+      incomeAmount: incomeAmount,
+    };
+    incomeArr.push(obj);
+    //   Call Display Income Table Function
+    displayIncome(incomeArr);
+    //   Make Input Value Blanks After add into table
+    document.getElementById("insource").value = "";
+    document.getElementById("inamount").value = "";
+    //   Call Total Income Function
+    totalIncome(incomeArr);
+    //   Call Total Balance Function
+    totalBalace(incomeArr, expenseArr);
+  }
 }
 // Add Expense Function
 function addExpense() {
   // Get Value Of Input Fields
   let expenseId = document.getElementById("exselect").value;
   let expenseAmount = document.getElementById("examount").value;
-  // Make Object and Push into income array
-  obj = {
-    id: Math.floor(Math.random() * 10000),
-    expenseId: expenseId,
-    expenseAmount: expenseAmount,
-  };
-  expenseArr.push(obj);
-  //   Call Display Expense Table Function
-  displayExpense(expenseArr);
-  //   Make Input Value Blanks After add into table
-  document.getElementById("exselect").value = "";
-  document.getElementById("examount").value = "";
-  //   Call Total Income Function
-  totalExpense(expenseArr);
-  //   Call Total Balance Function
-  totalBalace(incomeArr, expenseArr);
+
+  if (expenseId === "") {
+    alert("Please Fill Expense Source Field !!");
+    document.getElementById("exselect").focus();
+  } else if (expenseAmount === "") {
+    alert("Please Fill Expense Amount Field !!");
+    document.getElementById("examount").focus();
+  } else {
+    // Make Object and Push into income array
+    obj = {
+      id: Math.floor(Math.random() * 10000),
+      expenseId: expenseId,
+      expenseAmount: expenseAmount,
+    };
+    expenseArr.push(obj);
+    //   Call Display Expense Table Function
+    displayExpense(expenseArr);
+    //   Make Input Value Blanks After add into table
+    document.getElementById("exselect").value = "";
+    document.getElementById("examount").value = "";
+    //   Call Total Income Function
+    totalExpense(expenseArr);
+    //   Call Total Balance Function
+    totalBalace(incomeArr, expenseArr);
+  }
 }
 // Total Income Function
 function totalIncome(incomeArr) {
