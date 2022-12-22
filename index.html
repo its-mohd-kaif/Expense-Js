@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Expense Manager</h1>
+  
+        <div>
+          <div class="row">
+            <div class="column1">
+              <h3>Income</h3>
+              <span>Income Source</span>
+              <div class="input">
+                <input
+                  placeholder="Type income source..."
+                  id="insource"
+                />
+              </div>
+              <br></br>
+              <br></br>
+              <span>Income Amount</span>
+              <div class="input">
+                <input
+                  type="number"
+                  placeholder="Type income amount..."
+                  id="inamount"
+                />
+              </div>
+              <br></br>
+              <br></br>
+              <button onclick="addIncome()" class="incomeBtn">
+                ADD INCOME
+              </button>
+              <span  class="totalin">Total Income:</span>
+              <span id="totalIncome" class="totalincome"></span>
+              <p id="tableIncome"></p>
+              <br></br>
+            </div>
+  
+            <div class="column2">
+              <sapn class="totalAm">Total Balance:</sapn>
+              <span id="totalBalance" class="totalAmount">₹ </span>
+            </div>
+            <div class="column3">
+              <h3>Expense</h3>
+              <select id="exselect" >
+                <option value="">-Expense Categories-</option>
+                <option value="Grocery">Grocery</option>
+                <option value="Veggies">Veggies</option>
+                <option value="Travelling">Travelling</option>
+                <option value="Miscellaneous">Miscellaneous</option>
+              </select>
+              <div class="input">
+                <input
+                  placeholder="Type Expense Amount..."
+                  id="examount"
+                />
+              </div>
+              <br></br>
+              <button onclick="addExpense()" class="expenseBtn" >
+                ADD EXPENSE
+              </button>
+              <span id="totalExpense" class="totalex">Total Expense:</span>
+              <span id = "tableExpense" class="totalexpense"></span>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+<script src="/index.js"></script>
+</html>

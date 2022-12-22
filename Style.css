@@ -1,0 +1,109 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  border: 5px solid black;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+input {
+  width: 100%;
+  height: 2em;
+  font-size: large;
+}
+
+select {
+  width: 100%;
+  height: 2em;
+  font-size: large;
+}
+
+option {
+  font-size: large;
+}
+
+.incomeBtn {
+  padding: 10px 20px;
+  font-size: large;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  margin-right: 12px;
+  margin-bottom: 20px;
+}
+
+.totalin {
+  font-size: large;
+  font-weight: 400;
+}
+
+.totalincome {
+  font-size: large;
+  font-weight: bold;
+}
+
+.expenseBtn {
+  padding: 10px 20px;
+  font-size: large;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  margin-right: 12px;
+  margin-bottom: 20px;
+}
+
+.totalex {
+  font-size: large;
+  font-weight: 400;
+}
+
+.totalexpense {
+  font-size: large;
+  font-weight: bold;
+}
+
+.totalAm {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.totalAmount {
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+button {
+  cursor: pointer;
+}
+
+.editExpense,
+.editIncome {
+  padding: 3px 7px;
+  background-color: yellowgreen;
+  color: white;
+  font-size: large;
+  border: none;
+  border-radius: 25px;
+}
+
+.deleteBtn {
+  padding: 3px 7px;
+  background-color: red;
+  color: white;
+  font-size: large;
+  border: none;
+  border-radius: 25px;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  border: 1px solid black;
+}
